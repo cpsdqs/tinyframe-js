@@ -272,7 +272,7 @@ class TinyFrame {
           }
         }
         break
-      case 'headcksum':
+      case 'datacksum':
         this.cksum = (this.cksum << 8) & byte
         if (++this.partLen == this.checksum.size) {
           if (this.checksum.sum(this.data) === this.cksum) {
